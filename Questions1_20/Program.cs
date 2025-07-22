@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 class Program
 {
@@ -117,59 +118,183 @@ class Program
 
         ///*  Girilen işarete göre (- + * /) iki sayıya o işlemi uygulayacaktır. Gerekli programı C# ile yazınız. */
 
-        double result = 0;
+        //double result = 0;
 
-        Console.Write("Lütfen yapmak istediğiniz matematiksel işlemi seçiniz (+, -, *, /): ");
-        char action = Console.ReadKey().KeyChar;
-        Console.WriteLine();
+        //Console.Write("Lütfen yapmak istediğiniz matematiksel işlemi seçiniz (+, -, *, /): ");
+        //char action = Console.ReadKey().KeyChar;
+        //Console.WriteLine();
 
-        Console.Write("Birinci sayıyı giriniz: ");
-        if (!double.TryParse(Console.ReadLine(), out double val1))
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\nGeçersiz bir sayı girdiniz! Lütfen tekrar deneyiniz.");
-            Console.ResetColor();
-            return;
-        }
+        //Console.Write("Birinci sayıyı giriniz: ");
+        //if (!double.TryParse(Console.ReadLine(), out double val1))
+        //{
+        //    Console.ForegroundColor = ConsoleColor.Red;
+        //    Console.WriteLine("\nGeçersiz bir sayı girdiniz! Lütfen tekrar deneyiniz.");
+        //    Console.ResetColor();
+        //    return;
+        //}
 
-        Console.Write("İkinci sayıyı giriniz: ");
-        if (!double.TryParse(Console.ReadLine(), out double val2))
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\nGeçersiz bir sayı girdiniz! Lütfen tekrar deneyiniz.");
-            Console.ResetColor();
-            return;
-        }
+        //Console.Write("İkinci sayıyı giriniz: ");
+        //if (!double.TryParse(Console.ReadLine(), out double val2))
+        //{
+        //    Console.ForegroundColor = ConsoleColor.Red;
+        //    Console.WriteLine("\nGeçersiz bir sayı girdiniz! Lütfen tekrar deneyiniz.");
+        //    Console.ResetColor();
+        //    return;
+        //}
 
-        switch (action)
-        {
-            case '+': result = val1 + val2; break;
-            case '-': result = val1 - val2; break;
-            case '*': result = val1 * val2; break;
-            case '/':
-                if (val2 == 0)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("\nBölen 0 olamaz!");
-                    Console.ResetColor();
-                    return;
-                }
-                result = val1 / val2;
-                break;
-            default:
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"\nGeçersiz işlem karakteri: '{action}'");
-                Console.ResetColor();
-                return;
-        }
+        //switch (action)
+        //{
+        //    case '+': result = val1 + val2; break;
+        //    case '-': result = val1 - val2; break;
+        //    case '*': result = val1 * val2; break;
+        //    case '/':
+        //        if (val2 == 0)
+        //        {
+        //            Console.ForegroundColor = ConsoleColor.Red;
+        //            Console.WriteLine("\nBölen 0 olamaz!");
+        //            Console.ResetColor();
+        //            return;
+        //        }
+        //        result = val1 / val2;
+        //        break;
+        //    default:
+        //        Console.ForegroundColor = ConsoleColor.Red;
+        //        Console.WriteLine($"\nGeçersiz işlem karakteri: '{action}'");
+        //        Console.ResetColor();
+        //        return;
+        //}
 
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"\nSonuç: {result}");
-        Console.ResetColor();
+        //Console.ForegroundColor = ConsoleColor.Green;
+        //Console.WriteLine($"\nSonuç: {result}");
+        //Console.ResetColor();
 
 
 
         #endregion
+
+        #region 6. Soru
+
+        /* Klavyeden isim girilecektir. Girilen isim ne olursa olsun kaldı yazacak fakat kendi ismimiz yazıldığında geçti yazılacaktır. Gerekli programı C# ile yazınız */
+
+        //string truelyLeader = "ATATÜRK";
+
+        //Console.Write("Lütfen Türkiye Cumhuriyeti'nin kurucu liderini giriniz: ");
+        //string? leader = Console.ReadLine();
+
+        //if (leader != null && leader.ToUpper() == truelyLeader.ToUpper())
+        //{
+        //    Console.ForegroundColor = ConsoleColor.Green;
+        //    Console.CursorVisible = false;
+        //    Console.WriteLine("\nKessinlikle doğru");
+        //}
+        //else
+        //{
+        //    Console.ForegroundColor= ConsoleColor.Red;
+        //    Console.CursorVisible = false;
+        //    Console.WriteLine("Yanlış");
+        //}
+        #endregion
+
+        #region 7. Soru
+
+        /* 1′den 20′ye kadar olan sayıların karesini ekrana yazdıran akış diyagramını oluşturunuz. Gerekli programı C# ile yazınız. */
+
+        //List<double> numbers = new List<double>();
+
+        //for (int i = 0; i < 20; i++)
+        //{
+        //    Console.WriteLine($"{i + 1}. sayının karesi: {Math.Pow(i + 1, 2)}");
+        //}
+
+        #endregion
+
+        #region 8. Soru
+
+        /* Klavyeden girilen sayının 2′ye bölümünü bulan akış diyagramını oluşturunuz. (not:bölme / operatörünü kullanmadan yapılacak- Acaba nasıl?) */
+
+        //Console.Write("2'ye bölmek istediğiniz sayıyı giriniz: ");
+        //if (!double.TryParse(Console.ReadLine(), out double inputVal))
+        //{
+        //    Console.ForegroundColor = ConsoleColor.Red;
+        //    Console.WriteLine("\nGeçersiz bir işlem yaptınız!");
+        //    Console.ResetColor();
+        //    return;
+        //}
+
+        //double total = 0;
+        //double division = 0;
+
+        //for (double i = 0; total + 2 <= inputVal; i++)
+        //{
+        //    total += 2;
+        //    division++;
+        //}
+
+        //double remain = inputVal - total;
+
+        //Console.ForegroundColor = ConsoleColor.Yellow;
+        //Console.WriteLine($"\nBölüm: {division}");
+
+        //if (remain != 0)
+        //    Console.WriteLine($"Kalan: {remain}");
+
+        //Console.ResetColor();
+
+
+        #endregion
+
+        #region 9. Soru
+
+        /* Klavyeden girilen sayının 3 katını bulan akış diyagramını oluştunuz. (not:çarpma * operatörünü kullanmadan) */
+
+        //Console.Write("3 ile çarpmak istediğiniz sayıyı giriniz: ");
+        //if (!double.TryParse(Console.ReadLine(), out double inputVal))
+        //{
+        //    Console.ForegroundColor = ConsoleColor.Red;
+        //    Console.WriteLine("\nGeçersiz bir işlem yaptınız!");
+        //    Console.ResetColor();
+        //    return;
+        //}
+
+        //// Sayının 3 katını bulacağız
+        //double result = 0;
+
+        //// Toplama işlemiyle 3 katını bul
+        //for (int i = 0; i < 3; i++)
+        //{
+        //    result += inputVal;
+        //}
+
+        //Console.ForegroundColor = ConsoleColor.Yellow;
+        //Console.WriteLine($"\nSonuç (3 katı): {result}");
+        //Console.ResetColor();
+
+
+        #endregion
+
+        #region 10. Soru
+
+        /* Klavyeden girilen isim Emir olana kadar ekrana “yanlış isim” mesajı veren,
+        Emir girilince “tebrikler, doğru isim” mesajı veren akış diyagramını oluşturunuz. */
+
+        string trueCorrect = "Emir";
+
+        Console.Write("Lütfen ismi giriniz: ");
+        string? text = Console.ReadLine();
+
+        if (text != null && text.ToLower() == trueCorrect.ToLower())
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Doğru");
+        }
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Yanlış");
+        }
+
+        #endregion
+
         Console.ReadLine();
     }
 }
